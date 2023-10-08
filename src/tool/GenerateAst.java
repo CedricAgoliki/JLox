@@ -63,7 +63,6 @@ public class GenerateAst {
         writer.println(") {");
         for (String field: fieldList) {
             String[] parts = field.trim().split(" ");
-            String fieldType = parts[0].trim();
             String fieldName = parts[1].trim();
             writer.println("            this." + fieldName + " = " + fieldName + ";");
         }
