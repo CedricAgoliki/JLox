@@ -80,7 +80,7 @@ public class GenerateAst {
         }
         writer.println("        }");
 
-        // visitor method
+        // visitor accept method
         writer.println("        @Override");
         writer.println("        <R> R accept(Visitor<R> visitor) {");
         writer.println("            return visitor.visit" + className + "Expr(this);");
